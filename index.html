@@ -4,14 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
+
     <header>
         JS Timed Quiz
     </header>
+
     <main>
         
+        <!-- Start button -->
+        <div class="startBtn">
+            <button onClick="startGame();">Start Game</button>
+        </div>
+
+        <!-- Question/Answer Box -->
+        <div class="quiz-container">
+            <div class="question-container">
+                <p>Question here</p>
+            </div>
+
+            <div class="answer-container">
+                <ul class="answer-list">
+                    <li><input type="button" value="Button1" data-answer="1"></li>
+                    <li><input type="button" value="Button2" data-answer="2"></li>
+                    <li><input type="button" value="Button3" data-answer="3"></li>
+                    <li><input type="button" value="Button4" data-answer="4"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer-container">
+            <p class="timer-text">TIME REMAINING: <span class="timer-count">60</span></p>
+        </div>
+
+        <!-- Score Section -->
+        <div class="score-container">
+            <p class="score-count">0</p>
+        </div>
+
+        <!-- Score Input -->
+        <div class="final-score-container">
+            <input type="text" name="initials-input" id="initials-input">
+            <p class="final-score">0</p>
+            <button type="submit" class="submit-score-button">Submit Score</button>
+        </div>
+
     </main>
 </body>
     <script src="./Assets/js/script.js"></script>
