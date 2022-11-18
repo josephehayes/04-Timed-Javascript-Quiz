@@ -6,7 +6,15 @@
     --sienna: #E76F51;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.head-container {
+    display: block;
+    height: 2vh;
+    text-align: center;
+}
 
 main {
     margin-top: 50px;
@@ -15,16 +23,16 @@ main {
     height: 200px;
     width: 100%;
     justify-content: center;
-    align-items: center;
 }
 
 .left-col,
 .right-col {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     height: 100vh;
     /* flex: 0 1 50%; */
     flex-direction: column;
+    align-content: center;
     align-items: center;
     padding-top: 5vh;
 }
@@ -32,7 +40,6 @@ main {
 .left-col {
     border-right: solid 5px black;
     width: 70%;
-
     background-color: lightgray;
 }
 
@@ -57,10 +64,74 @@ main {
     font-size: 150%;
 }
 
+.timer-container {
+    font-size: 175%;
+}
+
+.question-container {
+    font-size: 125%
+}
+
+/* .answer-container {
+    position: relative;
+    right: 25%
+    align-content: flex-start;
+    align-items: flex-start;
+} */
+
+.answer-list {
+    list-style: none;
+}
+
+.answer-list li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.answer-list li :hover,
+.startBtn :hover {
+    cursor: pointer;
+}
+
+.question-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question-container p {
+    font-size: 125%;
+}
+
+.final-score-container {
+    text-align: center;
+    font-size: 150%;
+}
+
+.final-score-container button {
+    font-size: 80%;
+}
+
+.high-score-section {
+    height: 80%;
+}
+
+.score-header {
+    font-size: 125%;
+    border-bottom: solid 1px black;
+}
+
+.score-container p {
+    height: 20%;
+    font-size: 150%;
+}
+
+#initials-input {
+    height: 25%;
+}
+
 /* .answer-container,
 .quiz-container,
 .timer-container,
-.score-container,
-.final-score-container {
+.final-score-container > * {
     display: none;
 } */

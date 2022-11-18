@@ -11,59 +11,62 @@
 
 <body>
 
-    <header>
-        JS Timed Quiz
+    <header class="head-container">
+        <h1> JavaScript Timed Quiz </h1>
     </header>
 
     <main>
-
-
         <div class="left-col">
-
             <!-- Start button -->
             <div class="startBtn">
-                <button onClick="startGame();">Start Game</button>
+                <button onClick="startCountdown();">Start Game</button>
             </div>
 
             <!-- Timer Section -->
-            <div class="timer-container">
-                <p class="timer-text">TIME REMAINING: <span class="timer-count">60</span></p>
+            <div class="timer-container hide" style="display: none;">
+                <p class="timer-text">TIME REMAINING: </p>
             </div>
 
             <!-- Question/Answer Box -->
-            <div class="quiz-container">
+            <div class="quiz-container hide" style="display: none;">
                 <div class="question-container">
                     <p>Question here</p>
                 </div>
 
-                <div class="answer-container">
+                <div class="answer-container hide" style="display: none;">
                     <ul class="answer-list">
-                        <li><input class="btn" type="button" value="Button1" data-answer="1"></li>
-                        <li><input class="btn" type="button" value="Button2" data-answer="2"></li>
-                        <li><input class="btn" type="button" value="Button3" data-answer="3"></li>
+                        <li><input class="ansbtn btn" type="button" value="Button1" data-answer="ans1"></li>
+                        <li><input class="ansbtn btn" type="button" value="Button2" data-answer="ans2"></li>
+                        <li><input class="ansbtn btn" type="button" value="Button3" data-answer="ans3"></li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Score Input -->
+            <div class="final-score-container" style="display: none;">
+                <p class="final-score">Final Score: 0</p>
+                <input type="text" placeholder="Enter your Initials" name="initials-input" id="initials-input" class="">
+                <p><button type="submit" class="submit-score-button btn" onClick="newScore();">Submit Score</button></p>
+            </div>
+
         </div>
+
         <div class="right-col">
             <!-- Score Section -->
             <div class="score-container">
-                <p class="score-count">0</p>
-            </div>
-
-            <!-- Score Input -->
-            <div class="final-score-container">
-                <input type="text" name="initials-input" id="initials-input">
-                <p class="final-score">0</p>
-                <button type="submit" class="submit-score-button">Submit Score</button>
+                <p class="score-count">Score: 0</p>
             </div>
 
             <!-- Highscore Section -->
             <div class="highscore-section">
-                <p class="score-header">Highscores:</p>
-                <p class="score-list">Scores go here</p>
+                <p class="score-header">Highscores</p>
+                <p class="score-list"></p>
             </div>
+
+            <!-- Clear Scores -->
+            <button class="btn" onClick="clearStoredScores();">Clear Scores</button>
         </div>
+
     </main>
 </body>
 <script src="./Assets/js/script.js"></script>
