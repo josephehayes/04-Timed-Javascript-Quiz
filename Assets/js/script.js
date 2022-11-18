@@ -157,7 +157,7 @@ const newScore = () => {
 
 const startGame = () => {
     const shuffledQuestions = questions.map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value);
-    timeLeft = 1;
+    timeLeft = 30;
     qNum = 0;
     score = 0;
     if (finalScoreContainer.style.display != "none") {

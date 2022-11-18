@@ -30,7 +30,6 @@ main {
     display: flex;
     justify-content: flex-start;
     height: 100vh;
-    /* flex: 0 1 50%; */
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -71,13 +70,6 @@ main {
 .question-container {
     font-size: 125%
 }
-
-/* .answer-container {
-    position: relative;
-    right: 25%
-    align-content: flex-start;
-    align-items: flex-start;
-} */
 
 .answer-list {
     list-style: none;
@@ -128,10 +120,3 @@ main {
 #initials-input {
     height: 25%;
 }
-
-/* .answer-container,
-.quiz-container,
-.timer-container,
-.final-score-container > * {
-    display: none;
-} */
