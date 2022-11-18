@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./Assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <header>
@@ -14,51 +16,56 @@
     </header>
 
     <main>
-        
-        <!-- Start button -->
-        <div class="startBtn">
-            <button onClick="startGame();">Start Game</button>
-        </div>
 
-        <!-- Question/Answer Box -->
-        <div class="quiz-container">
-            <div class="question-container">
-                <p>Question here</p>
+
+        <div class="left-col">
+
+            <!-- Start button -->
+            <div class="startBtn">
+                <button onClick="startGame();">Start Game</button>
             </div>
 
-            <div class="answer-container">
-                <ul class="answer-list">
-                    <li><input type="button" value="Button1" data-answer="1"></li>
-                    <li><input type="button" value="Button2" data-answer="2"></li>
-                    <li><input type="button" value="Button3" data-answer="3"></li>
-                </ul>
+            <!-- Timer Section -->
+            <div class="timer-container">
+                <p class="timer-text">TIME REMAINING: <span class="timer-count">60</span></p>
+            </div>
+
+            <!-- Question/Answer Box -->
+            <div class="quiz-container">
+                <div class="question-container">
+                    <p>Question here</p>
+                </div>
+
+                <div class="answer-container">
+                    <ul class="answer-list">
+                        <li><input class="btn" type="button" value="Button1" data-answer="1"></li>
+                        <li><input class="btn" type="button" value="Button2" data-answer="2"></li>
+                        <li><input class="btn" type="button" value="Button3" data-answer="3"></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="right-col">
+            <!-- Score Section -->
+            <div class="score-container">
+                <p class="score-count">0</p>
+            </div>
 
-        <!-- Timer Section -->
-        <div class="timer-container">
-            <p class="timer-text">TIME REMAINING: <span class="timer-count">60</span></p>
+            <!-- Score Input -->
+            <div class="final-score-container">
+                <input type="text" name="initials-input" id="initials-input">
+                <p class="final-score">0</p>
+                <button type="submit" class="submit-score-button">Submit Score</button>
+            </div>
+
+            <!-- Highscore Section -->
+            <div class="highscore-section">
+                <p class="score-header">Highscores:</p>
+                <p class="score-list">Scores go here</p>
+            </div>
         </div>
-
-        <!-- Score Section -->
-        <div class="score-container">
-            <p class="score-count">0</p>
-        </div>
-
-        <!-- Score Input -->
-        <div class="final-score-container">
-            <input type="text" name="initials-input" id="initials-input">
-            <p class="final-score">0</p>
-            <button type="submit" class="submit-score-button">Submit Score</button>
-        </div>
-
-        <!-- Highscore Section -->
-        <div class="highscore-section">
-            <p class="score-header">Highscores:</p>
-            <p class="score-list">Scores go here</p>
-        </div>
-
     </main>
 </body>
-    <script src="./Assets/js/script.js"></script>
+<script src="./Assets/js/script.js"></script>
+
 </html>

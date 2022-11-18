@@ -1,0 +1,66 @@
+:root {
+    --charcoal: #264653;
+    --green: #2A9D8F;
+    --maize: #E9C46A;
+    --sandy-brown: #F4A261;
+    --sienna: #E76F51;
+}
+
+
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-col,
+.right-col {
+    display: inline-flex;
+    justify-content: center;
+    height: 100vh;
+    /* flex: 0 1 50%; */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.left-col {
+    border-right: solid 5px black;
+    width: 70%;
+
+    background-color: lightgray;
+}
+
+.right-col {
+    width: 30%;
+}
+
+.btn {
+    background-color: var(--maize);
+    color: var(--charcoal);
+    border-radius: 10px;
+    width: fit-content;
+    height: 50px;
+    font-size: 115%
+}
+
+.startBtn button{
+    background-color: var(--maize);
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    font-size: 150%;
+}
+
+/* .answer-container,
+.quiz-container,
+.timer-container,
+.score-container,
+.final-score-container {
+    display: none;
+} */
